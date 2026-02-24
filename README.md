@@ -39,5 +39,5 @@ Datas precisam ser no formato `DD/MM/YYYY`.
 2. Rode o script:
 
 ```bash
-python weight_tracker.py
+python r_weight_tracking.py
 ```
