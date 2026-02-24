@@ -1,11 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import datetime
-
-#real data registered by myself since i've started dieting and exercising.
-date_strings = ['15/01/2025', '30/01/2025', '08/02/2025', '17/02/2025', '21/03/2025',
-                 '22/03/2025', '23/03/2025', '24/03/2025', '25/03/2025', '30/03/2025']
-weight = [145, 139.5, 137.9, 136.2, 131.4, 130.9, 130.2, 130.6, 132.5, 129.2]
+from data import date_strings, weight
 
 #convert date strings to datetime objects
 dates = [datetime.datetime.strptime(d, "%d/%m/%Y") for d in date_strings]
