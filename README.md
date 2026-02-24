@@ -4,7 +4,9 @@ Um script simples em Python para visualizar a variação de peso ao longo do tem
 
 ## Sobre:
 
-Esse projeto trata do meu caso específico, coletando dados ao longo do tempo. Os dados preenchidos são somente a data e o peso (em kg). Gera um gráfico em alta resolução, com duas linhas: uma dos dados coletados em específico (em azul), e a outra determinando a tendência dos próximos registros (em vermelho).
+Esse projeto trata do meu caso específico, coletando dados ao longo do tempo. Os dados preenchidos são somente a data e o peso (em kg). Gera um gráfico em alta resolução, com duas linhas: uma dos dados coletados em específico (em azul), e a outra determinando a tendência dos próximos registros (em vermelho). 
+
+Esses dados são coletados a partir do arquivo **`data.csv`**, integrados ao script principal através do arquivo **`data.py`**.
 
 ## Exemplo de Output:
 
@@ -27,17 +29,10 @@ pip install matplotlib numpy
 
 ## Uso:
 
-1. Edite a lista `date_strings` e `weight` com seus próprios valores.
-
-```python
-date_strings = ['15/01/2025', '30/01/2025', ...]
-weight = [145, 139.5, ...]
-```
-
-Datas precisam ser no formato `DD/MM/YYYY`.
+1. Edite a lista no arquivo data.csv com seus próprios registros. Datas precisam ser no formato `DD/MM/YYYY`.
 
 2. Rode o script:
 
 ```bash
-python r_weight_tracking.py
+python main.py
 ```
